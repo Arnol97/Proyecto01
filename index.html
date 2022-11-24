@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/all.js"></script>
+    <title>Royal Films</title>
+</head>
+
+<body>
+    <div class="header">
+        <div id="cabecera">
+            <div id="cabeceralogos">
+                <img src="img/logointer.png" alt="Logo">
+            </div>
+        </div>
+        <nav>
+            <ul class="mostrar">
+                <li>
+                    <img src="img/menuicon.png" alt="" onClick="mostrar()">
+                </li>
+            </ul>
+            <ul id="menu">
+                <li><img src="img/Logo1.png" width="25" height="25"></li>
+                <li><a href="#seccion" onClick="location.reload()" class="bot">Estrenos</a></li>
+                <li><a href="#pelis" class="bot">Cartelera</a></li>
+                <li><a href="" class="bot">Sobre nosotros</a></li>
+                <li><a href="Seccion.html" class="bot">iniciar seccion</a></li>
+                <li><a href="#contenidofooter" class="bot">Contactanos</a></li>
+            </ul>
+        </nav>
+    </div>
+    <section id="principal">
+
+
+        <div id="carousel">
+            <img src="img/flecha.png" alt="Carousel" class="flechas" id="flechauno" onClick="retroceder()">
+            <img src="img/flechad.png" alt="Carousel" class="flechas" id="flechados" onClick="avanzar()">
+            <img src="" alt="Carousel" id="img" class="imagen">
+        </div>
+
+        <div class="flexsearch">
+            <div class="flexsearch--wrapper">
+                <form class="flexsearch--form" action="#" method="post">
+                    <div class="flexsearch--input-wrapper">
+                        <input class="flexsearch--input" type="search" placeholder="Buscar pelicula">
+                    </div>
+                    <input class="flexsearch--submit" type="submit" value="&#10140;" />
+                </form>
+            </div>
+        </div>
+
+        <section id="seccion">
+            <div class="promociones">
+                <h3>Estrenos</h3>
+                <hr>
+                <div class="respromociones">
+                    <span id="promocionuno"><img src="img/grupo-gente-cine_23-2148115428.png" alt="Promocion"></span>
+                    <p><strong>Grandes estrenos</strong> <em>Noviembre</em> </p>
+                    <hr>
+                    <p>Grandes pelicualas en estreno para el mes de noviembre, esperenlo con asias.</p>
+                    <br>
+                    <span id="promocionuno"><img src="img/grupo-gente-cine_23-2148115428.png" alt="Promocion"></span>
+                    <p><strong>Grandes estrenos</strong> <em>Diciembre</em> </p>
+                    <hr>
+                    <p>Grandes pelicualas en estreno para el mes de diciembre, esperenlo con asias.</p>
+                    <br>
+
+                </div>
+            </div>
+            <!--Cartelera y promociones-->
+            <div class="cartelera" id="pelis">
+                <h3>Cartelera</h3>
+                <hr>
+                <div class="peliculas">
+                    <div class="pelicula1" id="peli1">
+                        <img src="img/it.jpg" alt="Pelicula1" class="seleccionado">
+                        <h5 id="titulo1">Avatar</h5>
+                        <p>llegando a luchar, al final, por salvar el extraño mundo al que ha aprendido a llamar su
+                            hogar.</p>
+                    </div>
+                    <div class="pelicula1" id="peli2">
+                        <img src="img/angry.jpg" alt="Pelicula2" class="seleccionado" id="peli2">
+                        <h5 id="titulo2">Black Adam</h5>
+                        <p>La largamente esperada película de Black Adam protagonizada por Dwayne Johnson finalmente
+                            está en cines</p>
+                    </div>
+                </div>
+
+                <div class="peliculas">
+                    <div class="pelicula1" id="peli3">
+                        <!--<img src="img/banner.png" alt="Pelicula1" class="banner" >-->
+                        <img src="img/historiasdemiedo.jpg" alt="Pelicula1" class="seleccionado" id="peli4">
+                        <h5 id="titulo4">Historias de meido para contar en la oscuridad</h5>
+                        <p>Grandes pelicualas en estreno para el mes de noviembre, esperenlo con asias.</p>
+                    </div>
+                    <div class="pelicula1" id="peli4">
+                        <img src="img/habia.jpg" alt="Pelicula2" class="seleccionado" id="peli5">
+                        <h5 id="titulo5">Habia una vez en... Hollywood</h5>
+                        <p>Grandes pelicualas en estreno para el mes de noviembre, esperenlo con asias.</p>
+                    </div>
+                </div>
+
+                <div class="peliculas">
+                    <div class="pelicula1" id="peli5">
+                        <img src="img/dora.jpg" alt="Pelicula3" clasS="seleccionado" id="peli6">
+                        <h5 id="titulo6">Dora: La Exploradora</h5>
+                        <p>Grandes pelicualas en estreno para el mes de noviembre, esperenlo con asias.</p>
+                    </div>
+                    <div class="pelicula1" id="peli6">
+                        <img src="img/angel.jpg" alt="Pelicula3" class="seleccionado" id="peli3">
+                        <h5 id="titulo3">Angel Bajo Fuego</h5>
+                        <p>Grandes pelicualas en estreno para el mes de noviembre, esperenlo con asias.</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+    </section>
+    <footer>
+        <div id="contenidofooter">
+            <div id="contacto">
+                <h4>CONTACTO</h4>
+                <hr>
+                <ul>
+                    <li><i class="fas fa-map-pin"></i> Royal Films Unicentro, Avenida 16BE #16BE-60, Cúcuta, Norte de
+                        Santander</li>
+                    <li><i class="fas fa-phone"></i> +99 999 999 99</li>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
+    <script type="text/javascript">
+        var i = 0;
+        window.onload = function () {
+            avanzar();
+        }
+        function mostrar() {
+            var element = document.getElementsByClassName("bot");
+            if (element.length < 1) {
+                var element = document.getElementsByClassName("menu");
+                element[0].className = "bot";
+                element[0].className = "bot";
+                element[0].className = "bot";
+                element[0].className = "bot";
+                element[0].className = "bot";
+            } else {
+                element[0].className = "menu";
+                element[0].className = "menu";
+                element[0].className = "menu";
+                element[0].className = "menu";
+                element[0].className = "menu";
+            }
+        }
+        function avanzar() {
+            var imagen = document.getElementById("img");
+            if (i == 0) {
+                imagen.src = "img/titulo.jpg";
+                i = 1;
+            } else if (i == 1) {
+                imagen.src = "img/angryposter.jpg";
+                i = 2
+            } else if (i == 2) {
+                imagen.src = "img/itposter.jpg";
+                i = 3;
+            }
+            else if (i == 3) {
+                imagen.src = "img/angelposter.jpg";
+                i = 0;
+            }
+            console.log(i);
+        }
+        function retroceder() {
+            var imagen = document.getElementById("img");
+            if (i == 0) {
+                imagen.src = "img/titulo.jpg";
+                i = 2;
+            } else if (i == 1) {
+                imagen.src = "img/angryposter.jpg";
+                i = 0;
+            } else if (i == 2) {
+                imagen.src = "img/itposter.jpg";
+                i = 3;
+            }
+            else if (i == 3) {
+                imagen.src = "img/angelposter.jpg";
+                i = 1;
+            }
+            console.log(i);
+        }
+
+    </script>
+</body>
+
+</html>
